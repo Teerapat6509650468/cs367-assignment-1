@@ -1,0 +1,46 @@
+### 
+
+GET http://localhost:8080/survivalgears
+
+
+###
+POST http://localhost:8080/survivalgears
+Content-Type: application/json
+
+{
+    "survivalgearDetail": "rope",
+    "ownerName": "god",
+    "locationName": "garage shelf",
+    "borrowed": false,
+    "borrowedName": null
+}
+
+###
+POST http://localhost:8080/survivalgears
+Content-Type: application/json
+
+{
+    "survivalgearDetail": "fire starter",
+    "ownerName": "god",
+    "locationName": "camping kit",
+    "borrowed": false,
+    "borrowedName": null
+}
+
+###
+GET http://localhost:8080/survivalgears/99
+
+###
+PUT http://localhost:8080/survivalgears/1
+Content-Type: application/json
+
+{
+    "survivalgearDetail": "new gear name for #1",
+    "ownerName": "god",
+    "locationName": "your mom house",
+    "borrowed": false,
+    "borrowedName": null
+}
+
+###
+DELETE http://localhost:8080/survivalgears/5
